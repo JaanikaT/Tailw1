@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html font-family: "Inter" , sans-serif;>
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,367 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="flex-col">
+    <section class="flex-col w-auto h-[84px] bg-[#F5F7FA]">
+        <div name="navigation" class="flex justify-around pt-[30px]">
+            <div class="flex justify-self-start">
+                <div class="logo-icon"><img src="../assets/Logomain.svg"></div>
+            </div>
+            <nav name="menu" class="flex justify-between w-[588px] h-[24px] font-normal text-[#18191F] text-[16px]">
+                <a href="">Home</a>
+                <a href="">Service</a>
+                <a href="">Feature</a>
+                <a href="">Product</a>
+                <a href="">Testimonial</a>
+                <a href="">FAQ</a>
+            </nav>
+            <div class="flex justify-between gap-2.5">
+                <button><span
+                        class="flex h-[40px] w-[77px] py-2.5 px-5 rounded-[6px] bg-[#F5F7FA] text-center text-[#4CAF4F] text-[14px] leading-5 font-medium">Login</span></button>
+                <button><span class="btn">Sign up</span></button>
+            </div>
+        </div>
+    </section>
+    <section name="home" class="flex-col h-[1285px] gap-[40px]">
+        <!-- No ei tule neid paddinguid juurde :( pidi config failist kõik eemaldama, siis töötas, gap-id ei tööta-->
+        <div name="hero" class="flex justify-center h-[599px] bg-[#F5F7FA] px-[144px] py-[96px] gap-[104px]">
+            <div name="home-txtbox" class="flex-col">
+                <div class="flex-col">
+                    <div class="flex pb-[16px]">
+                        <h1 class="text-[64px] font-semibold leading-[72px] text-[#4D4D4D]">Lessons and insights
+                            <br><span class="text-[#4CAF4F]">from 8 years</span>
+                        </h1>
+                    </div>
+                    <p class="font-normal text-base text-[#717171]">Where to grow your business as a photographer: site
+                        or social media?</p>
+                </div>
+                <button class="flex pt-[32px]"><span class="btn">Register</span></button>
+            </div>
+            <div class="flex"><img src="../assets/Illustration-hero.svg"></div>
+        </div>
+        <div class="flex justify-center bg-[#F5F7FA] pb-4">
+            <img src="../assets/Dot.svg">
+        </div>
+        <!-- gap ei tööta normaalselt, panin marginid -->
+        <div name="home-clients" class="flex-col px-[144px] gap-[20px]">
+            <div name="clients-title" class="flex-col my-5">
+                <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">Our clients</h2>
+                <p class="flex justify-center font-normal text-base text-[#717171]">We have been working with some
+                    Fortune 500+ clients</p>
+            </div>
+            <div name="client-logos" class="flex justify-around my-7">
+                <img src="../assets/Logo-clients.svg">
+                <img src="../assets/Logo-clients-1.svg">
+                <img src="../assets/Logo-clients-2.svg">
+                <img src="../assets/Logo-clients-3.svg">
+                <img src="../assets/Logo-clients-4.svg">
+                <img src="../assets/Logo-clients-5.svg">
+                <img src="../assets/Logo-clients-6.svg">
+            </div>
+        </div>
+        <div class="home-community">
+            <div class="flex-col px-[144px] gap-[20px]">
+                <div class="flex-col my-5">
+                    <!-- ei tea, kuidas alumine (in a single...) rida ka keskele saada, peale <br> -->
+                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">Manage your entire
+                        community <br> in a single system</h2>
+                    <p class="flex justify-center font-normal text-base text-[#717171]">Who is Nextcent suitable for?
+                    </p>
+                </div>
+                <!-- shadow puudu -->
+                <div name="community-options" class="flex justify-between px-[144px]">
+                    <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                        <div class="flex-row">
+                            <div class="flex justify-center mb-4"><img src="../assets/Icon-member.svg"></div>
+                            <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] mb-2">
+                                <h3>Membership Organisations</h3>
+                            </div>
+                        </div>
+                        <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                            <p>Our membership management software provides full automation
+                                of membership renewals and payments</p>
+                        </div>
+                    </div>
+                    <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                        <div class="flex-row">
+                            <div class="flex justify-center mb-4"><img src="../assets/Icon-national.svg"></div>
+                            <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] mb-2">
+                                <h3>National Associations</h3>
+                            </div>
+                        </div>
+                        <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                            <p>Our membership management software provides full automation of membership renewals and
+                                payments</p>
+                        </div>
+                    </div>
+                    <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
+                        <div class="flex-row">
+                            <div class="flex justify-center mb-4"><img src="../assets/Icon-clubs.svg"></div>
+                            <!-- Ei tea, kuidas tekstirida murda, <br>-iga ei joonda keskele -->
+                            <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] break-words mb-2">
+                                <h3>Clubs And <br> Groups</h3>
+                            </div>
+                        </div>
+                        <div class="flex text-center font-normal text-[14px] text-[#717171]">
+                            <p>Our membership management software provides full automation of membership renewals and
+                                payments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section name="Nextcent-body" class="flex-col justify-center space-y-[48px]">
+        <div name="unlock" class="flex justify-evenly px-[144px]">
+            <div class="flex w-[442px] h-[433px]"><img src="../assets/rafiki.svg"></div>
+            <div class="flex-row w-[661px] gap-[32px]">
+                <div class="flex-row w-[601px] gap-4">
+                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">The unseen of spending
+                        three years at Pixelgrade</h2>
+                    <p class="flex font-normal text-[14px] text-[#717171]">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+                        Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+                        pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
+                        sem. Donec elementum pulvinar odio.</p>
+                </div>
+                <button class="btn2 mt-[32px]"><span>Learn More</span><button>
+            </div>
+        </div>
+        <div name="achievments" class="flex bg-[#F5F7FA] justify-evenly px-[144px] py-[64px]">
+            <div class="flex-col w-[540px] gap-[8px] my-[84px]">
+                <div class="flex gap-2 w-[408px]">
+                    <h2 class="text-4xl font-semibold text-[#4D4D4D] my-4">Helping a local <span
+                            class="text-[#4CAF4F]">business reinvent itself</span></h2>
+                </div>
+                <p class="font-normal text-base">We reached here with our hard work and dedication</p>
+            </div>
+            <div name="counts-frame" class="flex-col my-[64px] space-y-[40px]">
+                <div class="flex gap-[30px]">
+                    <div name="counts-row1" class="flex gap-4">
+                        <!-- erinev logo members -->
+                        <div class="flex"><img src="../assets/Iconmem.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>2,245,341</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Members</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <!-- vale logo clubs -->
+                        <div class="flex"><img src="../assets/Iconclb.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>46,328</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Clubs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-[30px]">
+                    <div class="flex gap-4">
+                        <div class="flex"><img src="../assets/Icontap.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>828,867</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Event Bookings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex"><img src="../assets/Iconcard.svg"></div>
+                        <div class="flex-col w-[191px]">
+                            <div class="flex text-[28px] text-[#18191F] font-bold">
+                                <h3>1,926,436</h3>
+                            </div>
+                            <div class="flex text-[16px] text-[#717171] font-normal">
+                                <p>Payments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div name="calendar" class="flex justify-evenly px-[144px]">
+            <div class="flex w-[442px] h-[433px]"><img src="../assets/pana.svg"></div>
+            <div class="flex-row w-[661px] gap-[32px]">
+                <div class="flex-row w-[601px] gap-4">
+                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">How to design your site
+                        footer like we did</h2>
+                    <p class="flex font-normal text-[14px] text-[#717171]">Donec a eros justo. Fusce egestas tristique
+                        ultrices. Nam tempor, augue nec tincidunt
+                        molestie, massa nunc varius arcu,
+                        at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+                        habitasse platea dictumst. Vivamus
+                        vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies,
+                        non aliquet urna tincidunt.
+                        Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est,
+                        finibus et nisi ac, hendrerit
+                        venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+                </div>
+                <button class="btn2 mt-[32px]"><span>Learn More</span><button>
+            </div>
+        </div>
+        <div name="customer" class="flex bg-[#F5F7FA] px-[144px] py-[32px] ">
+            <div name="customer-layout" class="flex space-x-[78px]">
+                <!-- shadow puudu pildilt, kusagil paremal liiga palju paddingut-->
+                <div class="flex w-[326px] h-[326px] radius-[8px]"><img src="../assets/image 9customer.png"></div>
+                <div name="customer-txtbox" class="flex-row space-y-[32px] w-[784px]">
+                    <div class="flex-row space-y-[16px]">
+                        <p class=" flex font-medium text-base text-[#717171]">Maecenas dignissim justo eget nulla rutrum
+                            molestie.
+                            Maecenas
+                            lobortis
+                            sem dui, vel
+                            rutrum
+                            risus tincidunt ullamcorper.
+                            Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut
+                            molestie arcu, at hendrerit
+                            elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+                            tellus sed augue ultrices, quis
+                            tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+                            potenti. Quisque malesuada
+                            enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur
+                            libero condimentum id.
+                            Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+                        <div class="flex-row space-y-[8px]">
+                            <div class="flex font-semibold text-[20px] text-[#4CAF4F]">
+                                <h3>Tim Smith</h3>
+                            </div>
+                            <div class="flex font-normal text-base text-[#89939E]">British Dragon Boat Racing
+                                Association</div>
+                        </div>
+                    </div>
+                    <div name="other-customers" class="flex space-x-[28px]">
+                        <div class="flex space-x-[41px]">
+                            <img src="../assets/Logocol-logo.svg">
+                            <img src="../assets/Logocol-logo-1.svg">
+                            <img src="../assets/Logocol-logo-2.svg">
+                            <img src="../assets/Logocol-logo-3.svg">
+                            <img src="../assets/Logocol-logo-4.svg">
+                            <img src="../assets/Logocol-logo-5.svg">
+                        </div>
+                        <div class="flex p-2 font-semibold text-[20px] text-[#4CAF4F]"><a href="">
+                                <h4>Meet all customers</h4>
+                            </a>
+                            <!-- puudu veel arrow icon -->
+                            <img name="arrow-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="community-updates">
+            <div class="community-updates-txtbox">
+                <div class="community-updates-title">
+                    <h2 class="">Caring is the new marketing</h2>
+                </div>
+                <div class="community-updates-txt">
+                    <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more.
+                        See who's joining the
+                        community, read about how our community are increasing their membership income and lot's more. ​
+                    </p>
+                </div>
+            </div>
+            <div class="community-options">
+                <div class="community-option1">
+                    <div class="com-opt1-pic">
+                        <img>
+                    </div>
+                    <div class="com-opt1-content">
+                        <div class="com-opt1-txt">
+                            <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                        </div>
+                        <div class="com-opt1-link">
+                            <a href="">Readmore</a>
+                            <img name="arrow-icon" </div>
+                        </div>
+                    </div>
+                    <div class="community-option2">
+                        <div class="com-opt2-pic">
+                            <img>
+                        </div>
+                        <div class="com-opt2-content">
+                            <div class="com-opt2-txt">
+                                <p>What are your safeguarding responsibilities and how can you manage them?</p>
+                            </div>
+                            <div class="com-opt2-link">
+                                <a href="">Readmore</a>
+                                <img name="arrow-icon" </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-option3">
+                        <div class="com-opt3-pic">
+                            <img>
+                        </div>
+                        <div class="com-opt3-content">
+                            <div class="com-opt3-txt">
+                                <p>Revamping the Membership Model with Triathlon Australia</p>
+                            </div>
+                            <div class="com-opt3-link">
+                                <a href="">Readmore</a>
+                                <img name="arrow-icon" </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <div class="footer-title-frame">
+                <div class="footer-title">
+                    <h1>Pellentesque suscipit fringilla libero eu.</h1>
+                </div>
+                <button class="btn"><span>Get a Demo</span></button>
+                <img class="arrow-icon" </div>
+                <div class="footer-frame">
+                    <div class="company-info">
+                        <div class="logo-icon"><img></div>
+                        <div class="logo">Nexcent</div>
+                        <div class="copywright">Copyright © 2020 Nexcent ltd.</div>
+                        <div class="social-links">
+                            <a href="" class="social-icon">Insta</a>
+                            <a href="" class="social-icon">Basketball?</a>
+                            <a href="" class="social-icon">Twitter</a>
+                            <a href="" class="social-icon">Youtube</a>
+                        </div>
+                    </div>
+                    <div class="company-links">
+                        <div class="company">
+                            <p>Company</p>
+                            <a href="">About us</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact us</a>
+                            <a href="">Pricing</a>
+                            <a href="">Testimonials</a>
+                        </div>
+                        <div class="support">
+                            <p>Support</p>
+                            <a href="">Help center</center></a>
+                            <a href="">Terms of service</a>
+                            <a href="">Legal</a>
+                            <a href="">Privacy policy</a>
+                            <a href="">Status</a>
+                        </div>
+                        <div class="Update">
+                            <p>Stay up to date</p>
+                            <form action="">Placehorlder text: Your email address</form>
+                            <img class="send-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 </body>
 
 </html>
