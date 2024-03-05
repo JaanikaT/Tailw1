@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/Iconmini.svg">
 </head>
 
 <body class="flex-col">
@@ -117,11 +118,11 @@
             </div>
         </div>
     </section>
-    <section name="Nextcent-body" class="flex-col justify-center space-y-[48px]">
-        <div name="unlock" class="flex justify-evenly px-[144px]">
-            <div class="flex w-[442px] h-[433px]"><img src="../assets/rafiki.svg"></div>
-            <div class="flex-row w-[661px] gap-[32px]">
-                <div class="flex-row w-[601px] gap-4">
+    <section name="Nextcent-body" class="flex-col justify-center space-y-[48px] pb-[95px]">
+        <div name="unlock" class="flex justify-center space-x-[49px] px-[144px]">
+            <div class="flex w-[442px] mt-[52px]"><img src="../assets/rafiki.svg"></div>
+            <div class="flex-col w-[661px] space-y-[32px]">
+                <div class="flex-col w-[601px] space-y-4 mt-[82px]">
                     <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">The unseen of spending
                         three years at Pixelgrade</h2>
                     <p class="flex font-normal text-[14px] text-[#717171]">Lorem ipsum dolor sit amet,
@@ -131,22 +132,22 @@
                         pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus
                         sem. Donec elementum pulvinar odio.</p>
                 </div>
-                <button class="btn2 mt-[32px]"><span>Learn More</span><button>
+                <button class="btn2"><span>Learn More</span><button>
             </div>
         </div>
-        <div name="achievments" class="flex bg-[#F5F7FA] justify-evenly px-[144px] py-[64px]">
-            <div class="flex-col w-[540px] gap-[8px] my-[84px]">
-                <div class="flex gap-2 w-[408px]">
-                    <h2 class="text-4xl font-semibold text-[#4D4D4D] my-4">Helping a local <span
-                            class="text-[#4CAF4F]">business reinvent itself</span></h2>
+        <div name="achievments" class="flex bg-[#F5F7FA] justify-evenly px-[144px] ">
+            <div class="flex-col w-[540px] my-[84px] space-y-2">
+                <div class="flex w-[408px]">
+                    <h2 class="text-4xl font-semibold text-[#4D4D4D]">Helping a local <br><span
+                    class="text-[#4CAF4F]">business reinvent itself</span></h2>
                 </div>
                 <p class="font-normal text-base">We reached here with our hard work and dedication</p>
             </div>
             <div name="counts-frame" class="flex-col my-[64px] space-y-[40px]">
                 <div class="flex gap-[30px]">
                     <div name="counts-row1" class="flex gap-4">
-                        <!-- erinev logo members -->
-                        <div class="flex"><img src="../assets/Iconmem.svg"></div>
+                        <!-- erinev logo members, vastupidi värvidega??? -->
+                        <div class="flex"><img src="../assets/Icongreenmem.svg"></div>
                         <div class="flex-col w-[191px]">
                             <div class="flex text-[28px] text-[#18191F] font-bold">
                                 <h3>2,245,341</h3>
@@ -157,8 +158,8 @@
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <!-- vale logo clubs -->
-                        <div class="flex"><img src="../assets/Iconclb.svg"></div>
+                        <!-- ei tule õige ikoon clubs, mitu x proovisin alla laadida -->
+                        <div class="flex"><img src="../assets/Icongeenclubs.svg"></div>
                         <div class="flex-col w-[191px]">
                             <div class="flex text-[28px] text-[#18191F] font-bold">
                                 <h3>46,328</h3>
@@ -215,9 +216,8 @@
                 <button class="btn2 mt-[32px]"><span>Learn More</span><button>
             </div>
         </div>
-        <div name="customer" class="flex bg-[#F5F7FA] px-[144px] py-[32px] ">
+        <div name="customer" class="flex justify-center bg-[#F5F7FA] px-[144px] py-[32px] ">
             <div name="customer-layout" class="flex space-x-[78px]">
-                <!-- shadow puudu pildilt, kusagil paremal liiga palju paddingut-->
                 <div class="flex w-[326px] h-[326px] radius-[8px]"><img src="../assets/image 9customer.png"></div>
                 <div name="customer-txtbox" class="flex-row space-y-[32px] w-[784px]">
                     <div class="flex-row space-y-[16px]">
@@ -254,11 +254,9 @@
                             <img src="../assets/Logocol-logo-4.svg">
                             <img src="../assets/Logocol-logo-5.svg">
                         </div>
-                        <div class="flex p-2 font-semibold text-[20px] text-[#4CAF4F]"><a href="">
-                                <h4>Meet all customers</h4>
-                            </a>
-                            <!-- puudu veel arrow icon -->
-                            <img name="arrow-icon">
+                        <div class="flex p-2 font-semibold text-[20px] text-[#4CAF4F] space-x-2">
+                            <a href=""><h4>Meet all customers</h4></a> 
+                            <div class="flex"><img src="../assets/Right.svg"></div>
                         </div>
                     </div>
                 </div>
@@ -324,53 +322,59 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="flex-col">
-            <div class="flex-col justify-center px-[32px] space-y-[32px] bg-[#F5F7FA]">
-                <div class="flex w-[887px] h-[152px]">
-                    <h1 class="flex text-[64px] font-semibold text-center">Pellentesque suscipit fringilla libero eu.</h1>
-                </div>
+    <section name="footer" class="flex-col">
+        <div class="flex-col py-[32px] space-y-[32px] bg-[#F5F7FA]">
+            <div class="flex justify-center">
+                <h1 class="text-[64px] font-semibold text-center">Pellentesque suscipit <br>fringilla libero eu.</h1>
+            </div>    
+            <div class="flex justify-center">
+                <button class="flex btn2">Get a Demo<img src="../assets/Rightwhite.svg"></button>
+            </div>
+        </div>         
+        <div name="footer-frame" class="flex justify-around px-[165px] py-[64px] bg-[#263238] text-white">
+            <div name="company-info" class="flex-col w-[350px] space-y-[40px]">
+                <div class="flex"><img src="../assets/Logowhite.svg"></div>
+                <div class="flex space-y-2"><p class="font-normal text-sm text-[#F5F7FA]">Copyright © 2020 Nexcent ltd.<br>All rights reserved</p></div>
                 <div class="flex">
-                    <button class="flex btn2"><span>Get a Demo<img src="../assets/Rightwhite.svg"></span></button>
-                    
-                </div>
-                <div class="footer-frame">
-                    <div class="company-info">
-                        <div class="logo-icon"><img></div>
-                        <div class="logo">Nexcent</div>
-                        <div class="copywright">Copyright © 2020 Nexcent ltd.</div>
-                        <div class="social-links">
-                            <a href="" class="social-icon">Insta</a>
-                            <a href="" class="social-icon">Basketball?</a>
-                            <a href="" class="social-icon">Twitter</a>
-                            <a href="" class="social-icon">Youtube</a>
-                        </div>
-                    </div>
-                    <div class="company-links">
-                        <div class="company">
-                            <p>Company</p>
-                            <a href="">About us</a>
-                            <a href="">Blog</a>
-                            <a href="">Contact us</a>
-                            <a href="">Pricing</a>
-                            <a href="">Testimonials</a>
-                        </div>
-                        <div class="support">
-                            <p>Support</p>
-                            <a href="">Help center</center></a>
-                            <a href="">Terms of service</a>
-                            <a href="">Legal</a>
-                            <a href="">Privacy policy</a>
-                            <a href="">Status</a>
-                        </div>
-                        <div class="Update">
-                            <p>Stay up to date</p>
-                            <form action="">Placehorlder text: Your email address</form>
-                            <img class="send-icon">
-                        </div>
-                    </div>
+                <img src="../assets/Social Links.svg">
                 </div>
             </div>
+            <div name="company-links" class="flex space-x-[30px] w-[635px]">
+                <div name="company" class="flex-col w-[160px] space-y-6">
+                    <div class="flex"><p class="font-semibold text-xl text-white">Company</p></div>
+                    <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
+                        <a class="flex" href="">About us</a>
+                        <a class="flex" href="">Blog</a>
+                        <a class="flex" href="">Contact us</a>
+                        <a class="flex" href="">Pricing</a>
+                        <a class="flex" href="">Testimonials</a>
+                    </div>    
+                </div>
+                <div name="support" class="flex-col w-[160px] space-y-6">
+                    <div class="flex"><p class="font-semibold text-xl text-white">Support</p></div>
+                    <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
+                        <a class="flex" href="">Help center</center></a>
+                        <a class="flex" href="">Terms of service</a>
+                        <a class="flex" href="">Legal</a>
+                        <a class="flex" href="">Privacy policy</a>
+                        <a class="flex" href="">Status</a>
+                    </div>    
+                </div>
+                <div name="up-to-date" class="flex-col w-[255px] space-y-6 ">
+                    <div class="flex"><p class="font-semibold text-xl text-white">Stay up to date</p></div>
+                    <form>
+                        <label class="relative block">
+                            <span class="absolute inset-y-0 right-0 flex items-center">
+                                <img src="../assets/send.svg">
+                                <svg class="h-[18px] w-[18px]"></svg>
+                            </span>
+                            <!-- bg-[#263238]/25 ei tööta, kastis õige heledam värv, aga lehel välja ei paista. Ka bg-värv + bg-opacity-25 ei tööta, panin lihtsalt heledama värvi-->
+                            <input class="block bg-zinc-600 w-full rounded-md py-2 pl-3 placeholder:text-[#D9DBE1]" placeholder="Your email address" type="email" name="email">
+                        </label>
+                    </form>    
+                </div>
+            </div>
+        </div>    
     </section>
 </body>
 
