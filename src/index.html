@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/Iconmini.svg">
 </head>
 
+<!-- Tehtud https://www.figma.com/file/0G5CWYjoykVoJkaw6Stap6/Responsive-Landing-Page-Design-%7C-Website-Home-Page-Design-%7C-Agency-Website-UI-Design-(Community)?type=design&node-id=5-573&mode=design&t=QtnksQiWR249EBoN-0 järgi -->
+
 <body class="flex-col">
     <section class="flex-col w-auto h-[84px] bg-[#F5F7FA]">
         <div name="navigation" class="flex justify-around pt-[30px]">
@@ -29,7 +31,7 @@
             </div>
         </div>
     </section>
-    <section name="home" class="flex-col h-[1285px] gap-[40px]">
+    <section name="home" class="flex-col gap-[40px]">
         <!-- No ei tule neid paddinguid juurde :( pidi config failist kõik eemaldama, siis töötas, gap-id ei tööta-->
         <div name="hero" class="flex justify-center h-[599px] bg-[#F5F7FA] px-[144px] py-[96px] gap-[104px]">
             <div name="home-txtbox" class="flex-col">
@@ -69,8 +71,8 @@
         <div class="home-community">
             <div class="flex-col px-[144px] gap-[20px]">
                 <div class="flex-col my-5">
-                    <!-- ei tea, kuidas alumine (in a single...) rida ka keskele saada, peale <br> -->
-                    <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">Manage your entire
+                    <h2 class="flex justify-center text-center text-4xl font-semibold text-[#4D4D4D] my-4">Manage your
+                        entire
                         community <br> in a single system</h2>
                     <p class="flex justify-center font-normal text-base text-[#717171]">Who is Nextcent suitable for?
                     </p>
@@ -104,8 +106,8 @@
                     <div class="flex-row w-[299px] px-[24px] py-[32px] gap-2">
                         <div class="flex-row">
                             <div class="flex justify-center mb-4"><img src="../assets/Icon-clubs.svg"></div>
-                            <!-- Ei tea, kuidas tekstirida murda, <br>-iga ei joonda keskele -->
-                            <div class="flex text-center text-[28px] font-bold text-[#4D4D4D] break-words mb-2">
+                            <div
+                                class="flex justify-center text-center text-[28px] font-bold text-[#4D4D4D] break-words mb-2">
                                 <h3>Clubs And <br> Groups</h3>
                             </div>
                         </div>
@@ -120,7 +122,7 @@
     </section>
     <section name="Nextcent-body" class="flex-col justify-center space-y-[48px] pb-[95px]">
         <div name="unlock" class="flex justify-center space-x-[49px] px-[144px]">
-            <div class="flex w-[442px] mt-[52px]"><img src="../assets/rafiki.svg"></div>
+            <div class="flex w-[442px] mt-[52px] "><img src="../assets/rafiki.svg"></div>
             <div class="flex-col w-[661px] space-y-[32px]">
                 <div class="flex-col w-[601px] space-y-4 mt-[82px]">
                     <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D] my-4">The unseen of spending
@@ -139,7 +141,7 @@
             <div class="flex-col w-[540px] my-[84px] space-y-2">
                 <div class="flex w-[408px]">
                     <h2 class="text-4xl font-semibold text-[#4D4D4D]">Helping a local <br><span
-                    class="text-[#4CAF4F]">business reinvent itself</span></h2>
+                            class="text-[#4CAF4F]">business reinvent itself</span></h2>
                 </div>
                 <p class="font-normal text-base">We reached here with our hard work and dedication</p>
             </div>
@@ -255,7 +257,9 @@
                             <img src="../assets/Logocol-logo-5.svg">
                         </div>
                         <div class="flex p-2 font-semibold text-[20px] text-[#4CAF4F] space-x-2">
-                            <a href=""><h4>Meet all customers</h4></a> 
+                            <a href="">
+                                <h4>Meet all customers</h4>
+                            </a>
                             <div class="flex"><img src="../assets/Right.svg"></div>
                         </div>
                     </div>
@@ -263,59 +267,60 @@
             </div>
         </div>
         <!-- ei ole asjad paigas -->
-        <div name="community-updates" class="flex-col space-y-4">
-            <div class="flex-col space-y-2">
-                <div class="flex w-[1110px] justify-center">
-                    <h2 class="text-4xl font-semibold text-[#4D4D4D]">Caring is the new marketing</h2>
-                </div>
-                <div class="flex w-[628px] justify-center">
-                    <p class="text-base text-[#717171] font-normal text-center">The Nexcent blog is the best     place to read about the latest membership insights, trends and more.
-                        See who's joining the community, read about how our community are increasing their membership income and lot's more. ​
-                    </p>
-                </div>
+        <div name="community-updates" class="flex-col space-y-4 pb-[95px]">
+            <div class="flex-col justify-center text-center space-y-2">
+                <h2 class="flex justify-center text-4xl font-semibold text-[#4D4D4D]">Caring is the new marketing</h2>
+                <p class="flex justify-center text-base text-[#717171] font-normal">The Nexcent blog is the best place
+                    to read about the latest membership insights, <br> trends and more.
+                    See who's joining the community, read about how our community <br>are increasing their membership
+                    income and lot's more.
+                </p>
             </div>
-            <!-- tekst pole pildi peal -->
-            <div name="community-options" class="flex justify-between mx-[144px]">
-                <div class="flex-col">
-                    <div class="flex align-top w-[368px] h-[286px] radius-2">
+            <!-- tekst pole osaliselt pildi peal, ei saanud absolute paika, keskele ei saanud ka joondada -->
+            <div name="community-options" class="flex justify-around mx-[144px]">
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
                         <img src="../assets/image 18opt1.png">
                     </div>
-                    <!-- shadow -->
-                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4">
+                    <!-- shadow puudu-->
+                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
                         <div class="flex w-[285px] h-[84px]">
-                            <h4 class="font-semibold text-xl text-center text-[#717171]">Creating Streamlined Safeguarding Processes with OneRen</h4>
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">Creating Streamlined
+                                Safeguarding Processes with OneRen</h4>
                         </div>
                         <div class="flex justify-center p-2 space-x-2">
-                            <a class="flex w-[99px] h-[28px] font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
-                            <div class="flex"><img src="../assets/Right.svg"></div> 
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-col">
-                    <div class="flex align-top w-[368px] h-[286px] radius-2">
-                        <img src="../assets/image 19opt2.png">
-                    </div>
-                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4">
-                        <div class="flex w-[285px] h-[84px]">
-                            <h4 class="font-semibold text-xl text-center text-[#717171]">What are your safeguarding responsibilities and how can you manage them?</h4>
-                        </div>
-                        <div class="flex justify-center p-2 space-x-2">
-                            <a class="flex w-[99px] h-[28px] font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
                             <div class="flex"><img src="../assets/Right.svg"></div>
                         </div>
                     </div>
                 </div>
-                <div class="flex-col justify-center w-[368px] h-[366px]">
-                    <div class="flex align-top w-[368px] h-[286px] radius-2">
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
+                        <img src="../assets/image 19opt2.png">
+                    </div>
+                    <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
+                        <div class="flex w-[285px] h-[84px]">
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">What are your safeguarding
+                                responsibilities and how can you manage them?</h4>
+                        </div>
+                        <div class="flex justify-center p-2 space-x-2">
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <div class="flex"><img src="../assets/Right.svg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col w-[368px] h-[366px]">
+                    <div class="flex radius-2">
                         <img src="../assets/image 20opt3.png">
                     </div>
                     <div class="flex-col bg-[#F5F7FA] radius-2 p-4 space-y-4 w-[317px] h-[176px]">
                         <div class="flex w-[285px] h-[84px]">
-                            <h4 class="font-semibold text-xl text-center text-[#717171]">Revamping the Membership Model with Triathlon Australia</h4>
+                            <h4 class="flex font-semibold text-xl text-center text-[#717171]">Revamping the Membership
+                                Model with Triathlon Australia</h4>
                         </div>
-                         <div class="flex justify-center p-2 space-x-2">
-                            <a class="flex w-[99px] h-[28px] font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
-                            <div class="flex"><img src="../assets/Right.svg"> </div>
+                        <div class="flex justify-center p-2 space-x-2">
+                            <a class="flex font-semibold text-xl text-[#4CAF4F]" href="">Readmore</a>
+                            <div class="flex"><img src="../assets/Right.svg"></div>
                         </div>
                     </div>
                 </div>
@@ -326,55 +331,65 @@
         <div class="flex-col py-[32px] space-y-[32px] bg-[#F5F7FA]">
             <div class="flex justify-center">
                 <h1 class="text-[64px] font-semibold text-center">Pellentesque suscipit <br>fringilla libero eu.</h1>
-            </div>    
+            </div>
             <div class="flex justify-center">
                 <button class="flex btn2">Get a Demo<img src="../assets/Rightwhite.svg"></button>
             </div>
-        </div>         
+        </div>
         <div name="footer-frame" class="flex justify-around px-[165px] py-[64px] bg-[#263238] text-white">
             <div name="company-info" class="flex-col w-[350px] space-y-[40px]">
                 <div class="flex"><img src="../assets/Logowhite.svg"></div>
-                <div class="flex space-y-2"><p class="font-normal text-sm text-[#F5F7FA]">Copyright © 2020 Nexcent ltd.<br>All rights reserved</p></div>
+                <div class="flex space-y-2">
+                    <p class="font-normal text-sm text-[#F5F7FA]">Copyright © 2020 Nexcent ltd.<br>All rights reserved
+                    </p>
+                </div>
                 <div class="flex">
-                <img src="../assets/Social Links.svg">
+                    <a href=""><img src="../assets/Social Links.svg"></a>
                 </div>
             </div>
             <div name="company-links" class="flex space-x-[30px] w-[635px]">
                 <div name="company" class="flex-col w-[160px] space-y-6">
-                    <div class="flex"><p class="font-semibold text-xl text-white">Company</p></div>
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Company</p>
+                    </div>
                     <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
                         <a class="flex" href="">About us</a>
                         <a class="flex" href="">Blog</a>
                         <a class="flex" href="">Contact us</a>
                         <a class="flex" href="">Pricing</a>
                         <a class="flex" href="">Testimonials</a>
-                    </div>    
+                    </div>
                 </div>
                 <div name="support" class="flex-col w-[160px] space-y-6">
-                    <div class="flex"><p class="font-semibold text-xl text-white">Support</p></div>
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Support</p>
+                    </div>
                     <div class="flex-col space-y-3 font-normal text-[14px] text-[#F5F7FA]">
                         <a class="flex" href="">Help center</center></a>
                         <a class="flex" href="">Terms of service</a>
                         <a class="flex" href="">Legal</a>
                         <a class="flex" href="">Privacy policy</a>
                         <a class="flex" href="">Status</a>
-                    </div>    
+                    </div>
                 </div>
                 <div name="up-to-date" class="flex-col w-[255px] space-y-6 ">
-                    <div class="flex"><p class="font-semibold text-xl text-white">Stay up to date</p></div>
+                    <div class="flex">
+                        <p class="font-semibold text-xl text-white">Stay up to date</p>
+                    </div>
                     <form>
                         <label class="relative block">
                             <span class="absolute inset-y-0 right-0 flex items-center">
-                                <img src="../assets/send.svg">
+                                <a href=""><img src="../assets/send.svg"></a>
                                 <svg class="h-[18px] w-[18px]"></svg>
                             </span>
                             <!-- bg-[#263238]/25 ei tööta, kastis õige heledam värv, aga lehel välja ei paista. Ka bg-värv + bg-opacity-25 ei tööta, panin lihtsalt heledama värvi-->
-                            <input class="block bg-zinc-600 w-full rounded-md py-2 pl-3 placeholder:text-[#D9DBE1]" placeholder="Your email address" type="email" name="email">
+                            <input class="block bg-zinc-600 w-full rounded-md py-2 pl-3 placeholder:text-[#D9DBE1]"
+                                placeholder="Your email address" type="email" name="email">
                         </label>
-                    </form>    
+                    </form>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
 </body>
 
